@@ -1,5 +1,11 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Merriweather:ital,wght@1,900&family=Oswald:wght@700&family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Caprasimo', cursive;
+
+
 }
 
 .App-logo {
@@ -35,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+  /** @type {import('tailwindcss').Config} */
+
+
+
 }

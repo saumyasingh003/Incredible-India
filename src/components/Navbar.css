@@ -1,0 +1,10 @@
+.navbar-scroll{
+    position:fixed;
+    background: rgba(196, 193, 193, 0.457);
+    backdrop-filter: blur(6px);
+    width: 90%;
+    left: 5%;
+    margin-top: 10px;
+    border-radius: 0.7em;
+
+}
