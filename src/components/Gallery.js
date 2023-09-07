@@ -22,12 +22,13 @@ const Gallery = () => {
               src={require("../assets/heritage.jpg")}
               alt=""
             />
-            <h1 className=" font-bold relative bottom-7 rounded-b-xl bg-[#1d1c1c94] hover:bg-[#131314da] text-white text-xl text-center datatitle">
+            <h1 className=" font-bold relative bottom-7 rounded-b-xl bg-[#1d1c1c94] hover:bg-[#131314da]
+             text-white text-xl text-center datatitle">
               Heritage
             </h1>
           </a>
 
-          <a href="#">
+          <a href="/Art">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -39,7 +40,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="#">
+          <a href="/Technology">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -51,7 +52,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="#">
+          <a href="/Infrastructure">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -63,19 +64,19 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="#">
+          <a href="/Festivals">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
-              src={require("../assets/Tourism.jpg")}
+              src={require("../assets/festivals.jpg")}
               alt=""
             />
             <h1 className=" font-bold relative bottom-7 rounded-b-xl bg-[#1d1c1c94] hover:bg-[#131314da] text-white text-xl text-center datatitle">
-              Tourism
+              Festivals
             </h1>
           </a>
 
-          <a href="#">
+          <a href="/Sports">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"

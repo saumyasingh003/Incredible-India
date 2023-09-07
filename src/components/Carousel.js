@@ -23,14 +23,13 @@ export default function  Carousel() {
       onSwiper={(swiper) => console.log(swiper)}
     >
     
+      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/mountains.jpg")} alt="logo"/></SwiperSlide>
       <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img1.jpg")} alt="logo"/></SwiperSlide>
-      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img2.jpg")} alt="logo"/></SwiperSlide>
       <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/taj.jpg")} alt="logo"/></SwiperSlide>
       <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img4.jpg")} alt="logo"/></SwiperSlide>
-      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/G20-Summit.jpg")} alt="logo"/></SwiperSlide>
-      {/* <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img2.jpg")} alt="logo"/></SwiperSlide>
-      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/taj.jpg")} alt="logo"/></SwiperSlide>
-      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img2.jpg")} alt="logo"/></SwiperSlide>  */}
+      <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/img2.jpg")} alt="logo"/></SwiperSlide>
+       <SwiperSlide><img className='h-[95vh] w-screen rounded-xl' src={require("../assets/terrace.jpg")} alt="logo"/></SwiperSlide>
+      
     </Swiper>
   );
 };

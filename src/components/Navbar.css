@@ -8,3 +8,25 @@
     border-radius: 0.7em;
 
 }
+
+/* Add this to your CSS file (Navbar.css) */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+    border: 1px solid #ccc;
+    z-index: 50;
+  }
+  
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+  
+

@@ -21,7 +21,7 @@ export default function News() {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <div className="max-w-xs rounded-md shadow-2xl shadow-gray-500  bg-white dark:bg-gray-900 dark:text-gray-100">
+        <div className="max-w-xs rounded-md shadow-2xl shadow-gray-500 mb-8  bg-white dark:bg-gray-900 dark:text-gray-100">
           <img
             src={require("../assets/modi.jpg")}
             alt=""
@@ -29,8 +29,8 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold  text-center">
-                Narendra Modi
+              <h2 className="text-2xl font-semibold  text-center">
+              Narendra Modi
               </h2>
               <p className="dark:text-gray-100 text-center">
                 Hon'ble Prime Minister Of India
@@ -58,7 +58,7 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
+              <h2 className="text-2xl font-semibold text-center">
               Sachin Tendulkar
               </h2>
               <p className="dark:text-gray-100 text-center">
@@ -84,7 +84,7 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
+              <h2 className="text-2xl font-semibold text-center">
               Amitabh Bachchan
               </h2>
               <p className="dark:text-gray-100 text-center">
@@ -110,7 +110,7 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
+              <h2 className="text-2xl font-semibold text-center">
               Arijit Singh
               </h2>
               <p className="dark:text-gray-100 text-center">
@@ -136,9 +136,9 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
+              <p className=" text-2xl font-semibold text-center">
               Nirmala Sitharaman
-              </h2>
+              </p>
               <p className="dark:text-gray-100 text-center">
               Formar Finance Minister
               </p>
@@ -162,7 +162,7 @@ export default function News() {
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
+              <h2 className="text-2xl font-semibold text-center">
               Mukesh Ambani
               </h2>
               <p className="dark:text-gray-100 text-center">
@@ -184,20 +184,20 @@ export default function News() {
       <SwiperSlide>
         <div className="max-w-xs rounded-md shadow-2xl shadow-gray-500  bg-white dark:bg-gray-900 dark:text-gray-100">
           <img
-            src={require("../assets/Priyanka.jpg")}
+            src={require("../assets/s jai.jpg")}
             alt=""
             className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500"
           />
           <div className="flex flex-col justify-between p-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold text-center">
-              Priyanka Chopra
+              <h2 className="text-2xl font-semibold text-center">
+              S. Jaishankar
               </h2>
               <p className="dark:text-gray-100 text-center">
-              Actress and Global Icon
+              Minister of External Affairs of India
               </p>
             </div>
-            <a href="https://en.wikipedia.org/wiki/Priyanka_Chopra" target="_blank"
+            <a href="https://en.wikipedia.org/wiki/S._Jaishankar" target="_blank"
               type="button"
               className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md bg-blue-400 hover:bg-blue-600 text-white text-xl  dark:text-gray-900"
             >

@@ -1,0 +1,27 @@
+import React from "react";
+import "./Video.css";
+import videoBg from "../assets/videoBg.mp4";
+
+const Video = () => {
+  return (
+    <div className="main">
+      <div className="overlay"></div>
+      <video src={videoBg} autoPlay loop muted />
+      <div className="content">
+        <span
+          style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
+          className="self-center text-5xl relative top-8 bottom-16 font-extrabold whitespace-nowrap
+           dark:text-white"
+        >
+          Technology
+        </span>
+        <p className="text-center text-3xl relative top-16 bottom-16 font-extrabold text-[#c2bbbebd] font-sans">
+        Behind the Scenes of Innovation: A Closer Look at the World of Advancement
+        </p>
+        
+      </div>
+    </div>
+  );
+};
+
+export default Video;
