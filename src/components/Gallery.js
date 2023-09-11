@@ -12,13 +12,13 @@ const Gallery = () => {
   }, []);
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
-    <h1 data-aos="zoom-out-right"  className="text-center text-5xl relative top- 12 font-extrabold text-[#CB337A] font-sans">
+    <h1 data-aos="zoom-out-right"  className="text-center md:text-5xl relative top- 12 font-extrabold text-[#CB337A] font-sans">
     Discover the Contemporary India
       </h1>
       <div className="relative  top-10 mx-2  rounded-xl shadow-xl">
         <Carousel />
       </div>
-      <h1 data-aos="zoom-out-left"  className="text-center text-5xl relative top-20 font-extrabold text-[#CB337A] font-sans">
+      <h1 data-aos="zoom-out-left"  className="text-center md:text-5xl relative top-20 font-extrabold text-[#CB337A] font-sans">
         Immersed in India: Exploring Multisensory Experiences
       </h1>
       <div className="container flex flex-col justify-center p-4 mb-32 mx-auto relative top-36">
