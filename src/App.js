@@ -20,6 +20,8 @@ import Space from "./components/Space";
 import Aiml from "./components/Aiml";
 import  Bitcoin from "./components/Bitcoin";
 import Cloud from "./components/Cloud";
+import Login from "./components/login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
         <Route path="/Aiml" element={<Aiml/>} />
         <Route path="/Bitcoin" element={<Bitcoin/>} />
         <Route path="/Cloud" element={<Cloud/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Register" element={<Register/>} />
       </Routes>
       <Footer/>
     </>

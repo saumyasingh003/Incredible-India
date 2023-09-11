@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Bitcoin = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="min-h-screen mb-10">
-      <h1 className="text-center  text-5xl relative top-6 font-extrabold text-[#59466f] font-sans">
+    <div className="overflow-x-hidden min-h-screen mb-10">
+      <h1 data-aos="zoom-out-left"  className="text-center  text-5xl relative top-6 font-extrabold
+       text-[#59466f] font-sans">
         Bitcoin: Decrypting the Digital Gold Rush
       </h1>
 
       <div class="  p-6 space-y-2 lg:col-span-5">
         <div className=" relative top-4">
-          <h1 class="text-3xl text-center  text-gray-900 font-serif">
+          <h1 data-aos="zoom-out-right"  class="text-3xl text-center  text-gray-900 font-serif">
             {" "}
             What is Bitcoin?
           </h1>
@@ -27,9 +34,9 @@ const Bitcoin = () => {
         </div>
       </div>
       <div className="relative top-11 ">
-        <img
+        <img data-aos="fade-down-right"
           src={require("../assets/bitcoin1.jpg")}
-          className="w-full h-[65vh] mb-20 "
+          className="w-full sm:h-[65vh] mb-20 "
         />
       </div>
       <div></div>
@@ -45,7 +52,7 @@ const Bitcoin = () => {
               >
                 How it works
               </span>
-              <h2
+              <h2 data-aos="zoom-out-left"
                 style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
                 className="text-5xl font-bold text-center dark:text-gray-50
         sm:text-4xl  -solid border-b-2 pb-4 border-blue-800"
@@ -53,7 +60,7 @@ const Bitcoin = () => {
                 Elaboration of each step to get started with Bitcoin
               </h2>
               <div className="grid gap-6 my-16 lg:grid-cols-3">
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div  data-aos="zoom-in" className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div
                     className="flex items-center justify-center flex-shrink-0 w-12 h-12 
               text-xl font-bold rounded-full bg-violet-500"
@@ -69,7 +76,7 @@ const Bitcoin = () => {
                     </p>
                   </p>
                 </div>
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div  data-aos="zoom-in" className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div
                     className="flex items-center justify-center flex-shrink-0 w-12 h-12 
               text-xl font-bold rounded-full bg-violet-500"
@@ -86,7 +93,7 @@ const Bitcoin = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div  data-aos="zoom-in" className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-violet-500">
                     3
                   </div>
@@ -100,7 +107,7 @@ const Bitcoin = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div  data-aos="zoom-in" className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-violet-500">
                     4
                   </div>
@@ -114,7 +121,7 @@ const Bitcoin = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div  data-aos="zoom-in" className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-violet-500">
                     5
                   </div>
@@ -128,7 +135,7 @@ const Bitcoin = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
+                <div data-aos="zoom-in"  className="flex flex-col p-8 space-y-4 rounded-md bg-gray-300">
                   <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-violet-500">
                     6
                   </div>

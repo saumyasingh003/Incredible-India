@@ -1,21 +1,29 @@
-import React from "react";
+
 import Carousel from "./Carousel";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <>
-    <h1 className="text-center text-5xl relative top- 9 font-extrabold text-[#CB337A] font-sans">
+    <div className="overflow-x-hidden overflow-y-hidden">
+    <h1 data-aos="zoom-out-right"  className="text-center text-5xl relative top- 12 font-extrabold text-[#CB337A] font-sans">
     Discover the Contemporary India
       </h1>
       <div className="relative  top-10 mx-2  rounded-xl shadow-xl">
         <Carousel />
       </div>
-      <h1 className="text-center text-5xl relative top-20 font-extrabold text-[#CB337A] font-sans">
+      <h1 data-aos="zoom-out-left"  className="text-center text-5xl relative top-20 font-extrabold text-[#CB337A] font-sans">
         Immersed in India: Exploring Multisensory Experiences
       </h1>
       <div className="container flex flex-col justify-center p-4 mb-32 mx-auto relative top-36">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
-          <a href="/Heritage">
+          <a data-aos="zoom-in-up"  href="/Heritage">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className=" object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -28,7 +36,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="/Art">
+          <a data-aos="zoom-in-up" href="/Art">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -40,7 +48,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="/Technology">
+          <a data-aos="zoom-in-up"  href="/Technology">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -52,7 +60,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="/Infrastructure">
+          <a data-aos="zoom-in-up" href="/Infrastructure">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -64,7 +72,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="/Festivals">
+          <a data-aos="zoom-in-up"href="/Festivals">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -76,7 +84,7 @@ const Gallery = () => {
             </h1>
           </a>
 
-          <a href="/Sports">
+          <a data-aos="zoom-in-up" href="/Sports">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -89,7 +97,7 @@ const Gallery = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

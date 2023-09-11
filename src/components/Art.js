@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Art = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div
+    <div  className="overflow-x-hidden"
       style={{
         background: "rgb(255,132,248)",
           background:
@@ -10,12 +16,12 @@ const Art = () => {
       }}
     >
     <div className="relative top-28 mb-16">
-    <h1 className="text-center text-5xl relative bottom-16 font-extrabold text-[#CB337A] font-sans" style={{ fontFamily: "'Russo One', sans-sarif"}}>
+    <h1  data-aos="zoom-out-left" className="text-center text-5xl relative bottom-16 font-extrabold text-[#CB337A] font-sans" style={{ fontFamily: "'Russo One', sans-sarif"}}>
       Indian Arts And its Vibrant History
       </h1>
     </div>
       <div className="grid grid-cols-1 md:grid-cols-2  justify-items-center ">
-        <div className="max-w-lg p-4 bg-gray-300 shadow-2xl  shadow-gray-900 rounded-2xl
+        <div  data-aos="zoom-in" className="max-w-lg p-4 bg-gray-300 shadow-2xl  shadow-gray-900 rounded-2xl
          dark:text-gray-100 my-5">
           <div className="flex justify-between pb-4 border-bottom">
             <div className="flex items-center">
@@ -26,13 +32,13 @@ const Art = () => {
               <img
                 src={require("../assets/painting.jpg")}
                 alt=""
-                className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+                className="block object-cover object-center w-full rounded-md sm:h-72 dark:bg-gray-500"
               />
               <div className="flex items-center text-xs">
                
               </div>
             </div>
-            <div className="space-y-2 h-28">
+            <div className="space-y-2 sm:h-28">
               <a rel="noopener noreferrer" href="/Painting" target="_block" className="block">
                 <h3 className="text-xl font-semibold dark:text-violet-400 text-center">
                   Painting
@@ -46,7 +52,7 @@ const Art = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-lg p-4   bg-gray-300 shadow-2xl shadow-gray-900 rounded-2xl dark:text-gray-100 my-5">
+        <div  data-aos="zoom-in" className="max-w-lg p-4   bg-gray-300 shadow-2xl shadow-gray-900 rounded-2xl dark:text-gray-100 my-5">
           <div className="flex justify-between pb-4 border-bottom">
             <div className="flex items-center">
             </div>
@@ -56,13 +62,13 @@ const Art = () => {
               <img
                 src={require("../assets/music.jpg")}
                 alt=""
-                className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+                className="block object-cover object-center w-full rounded-md sm:h-72 dark:bg-gray-500"
               />
               <div className="flex items-center text-xs">
                
               </div>
             </div>
-            <div className="space-y-2 h-28">
+            <div className="space-y-2 sm:h-28">
               <a rel="noopener noreferrer" href="/Music"target="_block" className="block">
                 <h3 className="text-xl font-semibold dark:text-violet-400 text-center">
                   Music
@@ -77,7 +83,8 @@ const Art = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-lg p-4 shadow-2xl shadow-gray-900 bg-gray-300 rounded-2xl dark:text-gray-100 my-5">
+        <div  data-aos="zoom-in" className="max-w-lg p-4 shadow-2xl shadow-gray-900
+         bg-gray-300 rounded-2xl dark:text-gray-100 my-5">
           <div className="flex justify-between pb-4 border-bottom">
             <div className="flex items-center">
             </div>
@@ -87,13 +94,13 @@ const Art = () => {
               <img
                 src={require("../assets/architecture.jpg")}
                 alt=""
-                className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+                className="block object-cover object-center w-full rounded-md sm:h-72 dark:bg-gray-500"
               />
               <div className="flex items-center text-xs">
                
               </div>
             </div>
-            <div className="space-y-2 h-28">
+            <div className="space-y-2 sm:h-28">
               <a rel="noopener noreferrer" href="/Art"  className="block">
                 <h3 className="text-xl font-semibold dark:text-violet-400 text-center">
                   Architecture
@@ -108,7 +115,7 @@ const Art = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-lg p-4 shadow-2xl shadow-gray-900  bg-gray-300 rounded-2xl dark:text-gray-100 my-5">
+        <div  data-aos="zoom-in" className="max-w-lg p-4 shadow-2xl shadow-gray-900  bg-gray-300 rounded-2xl dark:text-gray-100 my-5">
           <div className="flex justify-between pb-4 border-bottom">
             <div className="flex items-center">
             </div>
@@ -118,13 +125,13 @@ const Art = () => {
               <img
                 src={require("../assets/sculpture.jpg")}
                 alt=""
-                className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+                className="block object-cover object-center w-full rounded-md sm:h-72 dark:bg-gray-500"
               />
               <div className="flex items-center text-xs">
                
               </div>
             </div>
-            <div className="space-y-2 h-28">
+            <div className="space-y-2 sm:h-28">
               <a rel="noopener noreferrer" href="/Sculpture" target="_block" className="block">
                 <h3 className="text-xl font-semibold dark:text-violet-400 text-center">
                   Sculpture

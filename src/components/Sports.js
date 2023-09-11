@@ -1,54 +1,64 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sports = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="">
+    <div>
       <div
         style={{
           background: "rgb(91,92,205)",
           background:
             " linear-gradient(100deg, rgba(91,92,205,0.8941701680672269) 0%, rgba(200,79,63,0.9557948179271709) 76%)",
         }}
-        className="relative overflow-x-hidden h-full shadow-gray-800 "
+        className="relative overflow-x-hidden overflow-y-hidden  h-full shadow-gray-800 "
       >
         <h1
+          data-aos="zoom-out-left"
           style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
           className="text-center 
-   text-5xl relative top-8 mb-10 font-extrabold text-[#f8f6f3] font-sans"
+   text-5xl relative top-8 mb-5 font-extrabold text-[#f8f6f3] font-sans"
         >
           Traditional Games and Sports of India
         </h1>
-        <section className="py-6  dark:bg-gray-800 dark:text-gray-50">
-          <div className="container grid grid-cols-2 gap-3  mx-auto md:grid-cols-4">
+        <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+          <div className="container grid grid-cols-2 gap-4 p-10 mx-auto md:grid-cols-4">
             <img
               src={require("../assets/niraj.jpg")}
               alt=""
-              className="w-full object-cover mb-2 h-fit col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
+              className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
             />
             <img
               alt=""
-              className="w-fit h-60  rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+              className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
               src={require("../assets/cricket.jpg")}
             />
             <img
               alt=""
-              className="w-fit h-60 rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+              className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+              src={require("../assets/hockey.jpg")}  
+            />
+            <img
+              alt=""
+              className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
               src={require("../assets/badminton.jpg")}
             />
             <img
               alt=""
-              className="w-fit h-60 rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-              src={require("../assets/hockey.jpg")}
-            />
-            <img
-              alt=""
-              className="w-fit h-60 rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+              className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
               src={require("../assets/chess.jpg")}
             />
           </div>
         </section>
 
-        <div className="dark:bg-gray-800 dark:text-gray-100 mb-10">
+        <div
+          data-aos="fade-down-right"
+          className="dark:bg-gray-800 dark:text-gray-100 mb-10"
+        >
           <div className="container max-w-4xl px-10 py-6 bg-white mx-auto rounded-lg shadow-sm dark:bg-gray-900">
             <div className="flex items-center justify-between">
               <span className="text-sm dark:text-gray-400">Jun 1, 2023</span>
@@ -99,7 +109,10 @@ const Sports = () => {
             </div>
           </div>
         </div>
-        <div className="dark:bg-gray-800 dark:text-gray-100 mb-10">
+        <div
+          data-aos="fade-up-left"
+          className="dark:bg-gray-800 dark:text-gray-100 mb-10"
+        >
           <div className="container max-w-4xl px-10 py-6 bg-white mx-auto rounded-lg shadow-sm dark:bg-gray-900">
             <div className="flex items-center justify-between">
               <span className="text-sm dark:text-gray-400">Jul 16, 2023</span>
@@ -149,7 +162,10 @@ const Sports = () => {
             </div>
           </div>
         </div>
-        <div className="dark:bg-gray-800 dark:text-gray-100 mb-10">
+        <div
+          data-aos="fade-down-right"
+          className="dark:bg-gray-800 dark:text-gray-100 mb-10"
+        >
           <div className="container max-w-4xl px-10 py-6 bg-white mx-auto rounded-lg shadow-sm dark:bg-gray-900">
             <div className="flex items-center justify-between">
               <span className="text-sm dark:text-gray-400">Jun 1, 2023</span>
@@ -200,7 +216,10 @@ const Sports = () => {
             </div>
           </div>
         </div>
-        <div className="dark:bg-gray-800 dark:text-gray-100 mb-10">
+        <div
+          data-aos="fade-up-left"
+          className="dark:bg-gray-800 dark:text-gray-100 mb-10"
+        >
           <div className="container max-w-4xl px-10 py-6 bg-white mx-auto rounded-lg shadow-sm dark:bg-gray-900">
             <div className="flex items-center justify-between">
               <span className="text-sm dark:text-gray-400">May 20, 2023</span>

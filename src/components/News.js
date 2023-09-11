@@ -14,14 +14,30 @@ export default function News() {
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={10}
       slidesPerView={4}
+      breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+   
+    639: {
+      slidesPerView: 2,
+    },
+    865:{
+      slidesPerView:3
+    },
+    1000:{
+      slidesPerView:4
+    }
+  
+  }}
       navigation
       autoplay={{ delay: 3000 }}
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+  
+      
     >
       <SwiperSlide>
-        <div className="max-w-xs rounded-md shadow-2xl shadow-gray-500 mb-8  bg-white dark:bg-gray-900 dark:text-gray-100">
+        <div className="max-w-xs rounded-md shadow-2xl shadow-gray-500 mb-8   bg-white dark:bg-gray-900 dark:text-gray-100">
           <img
             src={require("../assets/modi.jpg")}
             alt=""

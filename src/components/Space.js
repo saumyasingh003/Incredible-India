@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Space = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="mb-10">
+    <div className="overflow-x-hidden mb-10">
       <div className="relative overflow-hidden  h-full shadow-gray-800">
-        <h1
+        <h1 data-aos="zoom-in-up"
           style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
           className="text-center 
       text-5xl relative top-6 mb-20 font-extrabold text-[#802b2b] font-sans"
         >
           India's Ascent to the Stars: A Journey into Space Exploration
         </h1>
-        <img src={require("../assets/isro.jpg")} className="w-full h-[85vh] mb-4" />
+        <img data-aos="fade-up" src={require("../assets/isro.jpg")} className="w-full sm:h-[85vh] mb-4" />
         <div class="relative shadow-2xl shadow-gray-700  p-10 bg-yellow-50  space-y-2 lg:col-span-5">
           <h3
             class="text-2xl font-bold  
@@ -74,19 +80,19 @@ const Space = () => {
           <section className="py-6 p-4 ">
             <div className="container flex flex-col justify-center mx-auto">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
-                <img
+                <img data-aos="fade-right"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/space1.jpg")}
                 />
-                <img
+                <img data-aos="fade-right"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/space2.jpg")}
                 />
-                <img
+                <img data-aos="fade-left"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/space3.jpg")}
                 />
-                <img
+                <img data-aos="fade-left"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/space4.jpg")}
                 />
@@ -100,8 +106,8 @@ const Space = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center mb-20">
 
-          <div className="relative top-10 left-16  shadow-2xl shadow-gray-600">
-            <div class="max-w-sm p-6 bg-white  border border-gray-100 rounded-lg shadow
+          <div data-aos="fade-right" className=" relative top-10 sm:left-16 mb-10  shadow-2xl shadow-gray-600">
+            <div  class="max-w-sm p-6 bg-white  border border-gray-100 rounded-lg shadow
              dark:bg-gray-800 dark:border-gray-700">
               <a href="https://www.isro.gov.in/Aditya_L1.html">
                 <h5 class="mb-2 text-2xl font-extrabold tracking-tight text-gray-900
@@ -123,7 +129,7 @@ const Space = () => {
               </a>
             </div>
           </div>
-          <div className="relative top-10  shadow-2xl shadow-gray-600">
+          <div  data-aos="fade-left" className="relative  top-10 sm:left-16 mb-10  shadow-2xl shadow-gray-600">
             <div class="max-w-sm p-6 bg-white  border border-gray-100 rounded-lg shadow
              dark:bg-gray-800 dark:border-gray-700">
               <a href="https://www.isro.gov.in/XPoSat.html">

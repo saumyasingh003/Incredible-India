@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sculpture = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div 
+    <div  className="overflow-x-hidden"
     style={{
       background:"rgb(255,132,248)",
        background: "linear-gradient(90deg, rgba(255,132,248,1) 0%, rgba(239,144,10,1) 80%)",
     }}
     className="relative overflow-x-hidden h-full shadow-gray-800">
-      <h1 className="text-center text-5xl relative top-6 font-extrabold text-[#CB337A] font-sans">
+      <h1 data-aos="zoom-out-left" className="text-center text-5xl relative top-6 font-extrabold text-[#CB337A] font-sans">
         Sculpting India's Timeless Stories in Stone
       </h1>
     <div>
     <div className="container flex flex-col justify-center p-4 mb-32 mx-auto relative top-20">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
-          <a href="https://en.wikipedia.org/wiki/Buddha_Preaching_his_First_Sermon_(Sarnath)" target="_blank">
+          <a  data-aos="fade-up-left" href="https://en.wikipedia.org/wiki/Buddha_Preaching_his_First_Sermon_(Sarnath)" target="_blank">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className=" object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -28,7 +34,7 @@ const Sculpture = () => {
             </h1>
           </a>
 
-          <a href="https://en.wikipedia.org/wiki/Nataraja_Temple,_Chidambaram" target="_blank">
+          <a data-aos="zoom-out-down" href="https://en.wikipedia.org/wiki/Nataraja_Temple,_Chidambaram" target="_blank">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
@@ -40,7 +46,7 @@ const Sculpture = () => {
             </h1>
           </a>
 
-          <a href="https://en.wikipedia.org/wiki/Ellora_Caves" target="_blank">
+          <a  data-aos="fade-down-right"  href="https://en.wikipedia.org/wiki/Ellora_Caves" target="_blank">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
               className="object-cover w-full cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"

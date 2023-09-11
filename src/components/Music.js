@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import MusicCards from './MusicCards'
 
 const Music = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className='pb-10'> 
+    <div className='pb-10 overflow-x-hidden'> 
            <div 
     style={{
       background:"rgb(255,132,248)",
        background: "linear-gradient(90deg, rgba(255,132,248,1) 0%, rgba(239,144,10,1) 80%)",
     }}
     className=" h-full shadow-gray-800">
-    <h1 className="text-center  text-5xl relative top-6 mb-10 font-extrabold text-[#382353] font-sans">
+    <h1  data-aos="zoom-out-left" className="text-center  text-5xl relative top-6 mb-10 font-extrabold text-[#382353] font-sans">
     The Melodic Tapestry of Indian Music
       </h1>
       <h3

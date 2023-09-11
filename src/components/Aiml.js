@@ -1,21 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Aiml = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="relative mb-10">
-      <img src={require("../assets/ai1.jpg")} className="w-full h-[65vh] " />
-      <div className="content">
-        <span
-          style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
-          className="self-center text-5xl relative top-8 font-extrabold whitespace-nowrap
-           dark:text-white"
-        >
-          Artificial Intelligence
-        </span>
-      </div>
+    <div className=" overflow-x-hidden  overflow-y-hidden relative mb-10">
+      <img src={require("../assets/ai1.jpg")} className="w-full sm:h-[65vh] "/>
       <div class="  p-6 space-y-2 lg:col-span-5">
         <div className=" relative top-4">
-          <h1 class="text-3xl text-center  text-red-800 font-serif">
+          <h1  data-aos="zoom-out-left" class="text-3xl text-center  text-red-800 font-serif">
             {" "}
             How is AI inportance?
           </h1>
@@ -31,7 +28,7 @@ const Aiml = () => {
           </p>
         </div>
         <div class="shadow-2xl shadow-gray-700 relative  bg-slate-200 top-10 p-6 space-y-2 lg:col-span-5">
-          <h3
+          <h3 data-aos="zoom-out-left"
             class="text-2xl font-bold  
         sm:text-4xl font-serif  text-center -solid border-b-2 pb-4 border-blue-800"
           >
@@ -94,7 +91,7 @@ const Aiml = () => {
             </p>
           </div>
         </div>
-        <h1
+        <h1  data-aos="zoom-out-left"
           className="text-center text-5xl relative top-16 font-extrabold text-[#CB337A] font-sans"
           style={{ fontFamily: "'Russo One', sans-sarif" }}
         >
@@ -104,19 +101,19 @@ const Aiml = () => {
           <section className="py-6  dark:bg-gray-800">
             <div className="container flex flex-col justify-center p-4 mx-auto">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
-                <img
+                <img  data-aos="fade-up-left"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/amazon.jpg")}
                 />
-                <img
+                <img  data-aos="fade-up-left"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/microsoft.jpg")}
                 />
-                <img
+                <img  data-aos="fade-down-right"
                   className="object-cover w-full dark:bg-gray-500 aspect-square"
                   src={require("../assets/google.jpg")}
                 />
-                <img
+                <img  data-aos="fade-down-right"
                   className="w-[20] dark:bg-gray-500 aspect-square"
                   src={require("../assets/meta.jpg")}
                 />

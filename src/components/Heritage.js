@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Heritage = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div
+    <div className="overflow-x-hidden"
       style={{
         background: "rgb(238,174,202)",
         background:
           "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
       }}
     >
-      <h1 className="text-center text-5xl mt-2 mb-2 font-extrabold text-[#18305b] font-sans">
+      <h1  data-aos="zoom-out-left" className="text-center text-5xl mt-2 mb-2 font-extrabold text-[#18305b] font-sans">
         Best Heritage Sites to visit in India
       </h1>
       <section className="dark:bg-gray-800 dark:text-gray-100">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-          <a
+          <a data-aos="zoom-in-right"
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Mysore_Palace"
             target="_blank"
@@ -49,7 +55,7 @@ const Heritage = () => {
             </div>
           </a>
 
-          <a
+          <a data-aos="zoom-in-left"
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Mahabodhi_Temple"
             target="_blank"
@@ -83,7 +89,7 @@ const Heritage = () => {
             />
           </a>
 
-          <a
+          <a data-aos="zoom-in-right"
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Hawa_Mahal"
             target="_blank"
@@ -119,7 +125,7 @@ const Heritage = () => {
             </div>
           </a>
 
-          <a
+          <a data-aos="zoom-in-left"
             rel="noopener noreferrer"
             href="https://www.britannica.com/place/Ajanta-Caves"
             target="_blank"
@@ -152,7 +158,7 @@ const Heritage = () => {
             />
           </a>
 
-          <a
+          <a data-aos="zoom-in-right"
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Jim_Corbett_National_Park"
             target="_blank"
@@ -186,7 +192,7 @@ const Heritage = () => {
             </div>
           </a>
 
-          <a
+          <a data-aos="zoom-in-left"
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Athirappilly_Falls"
             target="_blank"

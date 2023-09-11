@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <footer className=" bg-gray-800 text-white dark:text-gray-50">
         <div className="container flex flex-col mx-auto lg:flex-row divide-gray-400">
           <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">

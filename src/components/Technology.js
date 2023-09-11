@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Video from "./Video";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div>
         <Video />
       </div>
-      <div
+      <div 
          style={{
           background: "rgb(91,92,205)",
           background:
@@ -15,22 +21,23 @@ function App() {
         }}
         className="relative overflow-x-hidden h-full shadow-gray-800"
       >
-    <div className="container flex flex-col justify-center p-10 mb-10 mx-auto relative top-2">
+        <div className="container flex flex-col justify-center
+     p-10 mb-10 mx-auto relative top-2">
         <div className="grid grid-cols-1 gap-7 lg:grid-cols-2 sm:grid-cols-2">
           <a href="/Space">
-            <img
+            <img  data-aos="fade-down-right"
               style={{ boxShadow: "2px 2px 15px black" }}
-              className=" object-cover w-[50vw] cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
+              className=" object-cover sm:w-[50vw] cursor-pointer hover:animate-pulse sm:h-[40vh] rounded-xl"
               src={require("../assets/space.jpg")}
               alt=""
             />
             
           </a>
 
-          <a href="/Aiml">
+          <a  data-aos="fade-up-left" href="/Aiml">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
-              className="object-cover w-[50vw] cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
+              className="object-cover sm:w-[50vw] cursor-pointer hover:animate-pulse sm:h-[40vh] rounded-xl"
               src={require("../assets/ai.jpg")}
               alt=""
             />
@@ -39,10 +46,10 @@ function App() {
 
          
 
-          <a href="/Cloud">
+          <a  data-aos="fade-down-right" href="/Cloud">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
-              className="object-cover w-[50vw] cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
+              className="object-cover sm:w-[50vw] cursor-pointer hover:animate-pulse sm:h-[40vh] rounded-xl"
               src={require("../assets/iot.jpg")}
               alt=""
             />
@@ -50,10 +57,10 @@ function App() {
           </a>
 
           
-          <a href="/Bitcoin">
+          <a  data-aos="fade-up-left" href="/Bitcoin">
             <img
               style={{ boxShadow: "2px 2px 15px black" }}
-              className="object-cover w-[50vw] cursor-pointer hover:animate-pulse h-[40vh] rounded-xl"
+              className="object-cover sm:w-[50vw] cursor-pointer hover:animate-pulse sm:h-[40vh] rounded-xl"
               src={require("../assets/blockchain.jpg")}
               alt=""
             />

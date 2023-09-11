@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Festivals = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div>
+    <div className="overflow-x-hidden">
        <div style={{background: "rgb(34,193,195)",background: "linear-gradient(100deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 90%)",}}
     className="relative overflow-x-hidden h-full shadow-gray-800">
 
 
-      <h1 style={{fontFamily: " 'Bricolage Grotesque', sans-serif"}} className="text-center 
+      <h1  data-aos="zoom-out-left" 
+       style={{fontFamily: " 'Bricolage Grotesque', sans-serif"}} className="text-center 
       text-5xl relative top-8 mb-10 font-extrabold text-[#356179] font-sans">
       UnityFest: India's Celebration of Togetherness
       </h1>
@@ -31,7 +38,7 @@ const Festivals = () => {
         </p></div>
 
         <section className="dark:bg-gray-800 dark:text-gray-100">
-          <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+          <div  className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
             <a
               rel="noopener noreferrer"
               href="https://en.wikipedia.org/wiki/Diwali"
@@ -40,12 +47,12 @@ const Festivals = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/diwali.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"
@@ -74,7 +81,7 @@ const Festivals = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-up-left" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl
 				 group-hover:underline group-focus:underline"
@@ -95,7 +102,7 @@ const Festivals = () => {
                  beginnings. 
                 </p>
               </div>
-              <img
+              <img data-aos="fade-up-left"
                 src={require("../assets/holi.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -108,12 +115,12 @@ const Festivals = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/eid.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl
 				 group-hover:underline group-focus:underline"
@@ -142,7 +149,7 @@ const Festivals = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-up-left"  className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"
@@ -162,7 +169,7 @@ const Festivals = () => {
                   the removal of obstacles and the ushering in of new beginnings.
                 </p>
               </div>
-              <img
+              <img data-aos="fade-up-left"
                 src={require("../assets/Ganesh Chaturthi.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -175,12 +182,12 @@ const Festivals = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/onam.jpg")}
                 alt=""
                 className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"

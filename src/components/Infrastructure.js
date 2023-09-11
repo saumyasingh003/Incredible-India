@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Infrastructure = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <div className="relative overflow-x-hidden h-full shadow-gray-800">
-        <h1
+        <h1  data-aos="zoom-out-left" 
           style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
           className="text-center 
       text-5xl relative top-8 mb-10 font-extrabold text-[#1e1c46] font-sans"
         >
           Building India: Infrastructural Marvels
         </h1>
-        <div className="relative top-5 px-4  mb-10">
+        <div  className="relative top-5 px-4  mb-10">
           <h3 className="text-2xl font-bold  sm:text-3xl dark:text-gray-50"></h3>
           <p
             className="flex w-full text-center  mt-3 text-lg dark:text-gray-400"
@@ -51,7 +57,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >
@@ -59,9 +65,11 @@ const Infrastructure = () => {
             </h1>
           </div>
           <div className=" relative top-1 align-right mb-10 px-10">
-            <h4 className="text-xl font-bold tracki sm:text-3xl  dark:text-gray-50"></h4>
+            <h4 className="text-xl font-bold tracki sm:text-3xl 
+             dark:text-gray-50"></h4>
             <p
-              className="flex w-full text-center  mt-3 text-lg dark:text-gray-400"
+              className="flex w-full text-center  mt-3 text-lg 
+              dark:text-gray-400"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
             >
               Mumbai, often referred to as India's economic capital, stands as
@@ -97,7 +105,7 @@ const Infrastructure = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 dark:bg-gray-900"
               >
-                <img
+                <img data-aos="fade-right"
                   src={require("../assets/andhra.jpg")}
                   alt=""
                   className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -106,7 +114,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >
@@ -153,7 +161,7 @@ const Infrastructure = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 dark:bg-gray-900"
               >
-                <img
+                <img data-aos="fade-right"
                   src={require("../assets/dehli.jpg")}
                   alt=""
                   className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -162,7 +170,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >
@@ -213,7 +221,7 @@ const Infrastructure = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 dark:bg-gray-900"
               >
-                <img
+                <img data-aos="fade-right"
                   src={require("../assets/surat.jpg")}
                   alt=""
                   className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -222,7 +230,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >
@@ -274,7 +282,7 @@ const Infrastructure = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 dark:bg-gray-900"
               >
-                <img
+                <img data-aos="fade-right"
                   src={require("../assets/visakhapatnam.jpg")}
                   alt=""
                   className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -283,7 +291,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >
@@ -324,7 +332,7 @@ const Infrastructure = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 dark:bg-gray-900"
               >
-                <img
+                <img data-aos="fade-right"
                   src={require("../assets/chennai.jpg")}
                   alt=""
                   className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -333,7 +341,7 @@ const Infrastructure = () => {
             </div>
           </section>
           <div>
-            <h1
+            <h1 data-aos="zoom-in-up"
               style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
               className="text-center text-5xl relative  mb-10 font-extrabold text-[#356179] font-sans"
             >

@@ -10,11 +10,27 @@ import { Autoplay } from "swiper/modules";
 
 export default function MusicCards() {
   return (
-    <div className="mt-7 mb-10 p-3">
+    <div className="overflow-x-hidden mt-7 mb-10 p-3">
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={8}
       slidesPerView={4}
+      breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+   
+    639: {
+      slidesPerView: 2,
+    },
+    865:{
+      slidesPerView:3
+    },
+    1000:{
+      slidesPerView:4
+    }
+  
+  }}
       navigation
       autoplay={{ delay: 3000 }}
       pagination={{ clickable: true }}

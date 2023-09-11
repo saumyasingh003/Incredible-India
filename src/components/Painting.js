@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Painting = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
-      <div
+      <div className="overflow-x-hidden"
         style={{
           background: "rgb(255,132,248)",
           background:
@@ -11,7 +17,7 @@ const Painting = () => {
         }}
         className="relative overflow-x-hidden h-full shadow-gray-800"
       >
-        <h1
+        <h1 data-aos="zoom-out-left"
           style={{ fontFamily: " 'Bricolage Grotesque', sans-serif" }}
           className="text-center 
       text-5xl relative top-6 mb-10 font-extrabold text-[#356179] font-sans"
@@ -28,12 +34,12 @@ const Painting = () => {
 		 sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline 
 		 lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/Madhubani.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"
@@ -65,7 +71,7 @@ const Painting = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-up-left"  className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl
 				 group-hover:underline group-focus:underline"
@@ -88,7 +94,7 @@ const Painting = () => {
                   of clans and lineages.
                 </p>
               </div>
-              <img
+              <img data-aos="fade-up-left"  
                 src={require("../assets/bhill.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -101,12 +107,12 @@ const Painting = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/kalighat.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div  data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl
 				 group-hover:underline group-focus:underline"
@@ -139,7 +145,7 @@ const Painting = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div data-aos="fade-up-left"   className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"
@@ -162,7 +168,7 @@ const Painting = () => {
                   techniques.
                 </p>
               </div>
-              <img
+              <img data-aos="fade-up-left"  
                 src={require("../assets/Miniature.jpg")}
                 alt=""
                 className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
@@ -175,12 +181,12 @@ const Painting = () => {
               target="_blank"
               className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline shadow-2xl rounded-md focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
             >
-              <img
+              <img data-aos="fade-down-right"
                 src={require("../assets/phad.jpg")}
                 alt=""
                 className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
               />
-              <div className="p-6 space-y-2 lg:col-span-5">
+              <div data-aos="fade-down-right" className="p-6 space-y-2 lg:col-span-5">
                 <h3
                   className="text-2xl text-center font-semibold sm:text-4xl 
 				group-hover:underline group-focus:underline"

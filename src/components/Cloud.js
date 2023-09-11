@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Cloud = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="min-h-screen">
+    <div className="overflow-x-hidden min-h-screen">
       <div class="relative shadow-2xl shadow-gray-700  p-10 bg-gray-100  space-y-2 lg:col-span-5">
-        <h3
+        <h3 data-aos="zoom-out-right" 
           class="text-5xl font-extrabold  text-blue-900 
         sm:text-4xl font-serif   text-center "
         >
@@ -31,14 +37,14 @@ const Cloud = () => {
       <div className=" top-16 relative shadow-2xl shadow-gray-700 ">
         <img
           src={require("../assets/Benefits_of_Cloud_Computing.jpg")}
-          className="w-full h-[95vh] mb-20 "
+          className="w-full sm:h-[95vh] mb-20 "
         />
       </div>
       <div className="relative top-4 ">
         <section className="dark:bg-gray-800 dark:text-gray-100">
           <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
             <div>
-              <h2 className="text-3xl font-bold tracki text-center sm:text-5xl dark:text-gray-50">
+              <h2 data-aos="zoom-out-right" className="text-3xl font-bold tracki text-center sm:text-5xl dark:text-gray-50">
                 Cloud Computing Modals
               </h2>
               <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">
@@ -49,7 +55,7 @@ const Cloud = () => {
             </div>
             <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
               <div>
-                <h3 className="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
+                <h3 data-aos="zoom-in-right" className="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
                   Deployment Models
                 </h3>
                 <div className="mt-12 space-y-12">
@@ -182,8 +188,8 @@ const Cloud = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative  top-20  left-20">
-                <div aria-hidden="true" className="mt-10 h-[90vh] w-[30vw] lg:mt-0">
+              <div className="relative  top-20  left-17 ">
+                <div aria-hidden="true" className="mt-10 sm:h-[90vh] sm:w-[30vw] lg:mt-0">
                   <img
                     src={require("../assets/cloud-computing.jpg")}
                     alt=""
@@ -195,7 +201,7 @@ const Cloud = () => {
             <div>
               <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                 <div className="lg:col-start-2">
-                  <h3 className="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
+                  <h3 data-aos="zoom-in-left" className="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
                     Service Models
                   </h3>
                   <div className="mt-12 space-y-12">
@@ -219,7 +225,7 @@ const Cloud = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-lg font-extrabold leadi dark:text-gray-50">
+                        <h4  className="text-lg font-extrabold leadi dark:text-gray-50">
                           Infrastructure as a Service (IaaS)
                         </h4>
                         <p className="mt-2 dark:text-gray-400">
