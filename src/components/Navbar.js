@@ -27,7 +27,7 @@ const Navbar = () => {
   const subsections = ["Login", "Register", "Dashboard"];
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <nav
         className={
           scroll

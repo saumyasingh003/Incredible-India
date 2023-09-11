@@ -6,7 +6,7 @@ const login = () => {
  
 
   return (
-    <div className="overflow-x-hidden relative mb-1">
+    <div className="overflow-x-hidden overflow-y-hidden relative mb-1">
     <img className='h-[95vh] w-screen opacity-50  bg-transparent rounded-xl' src={require("../assets/login.jpg")} alt="logo"/>
     <div className="absolute inset-0 flex justify-center items-center">
    <div

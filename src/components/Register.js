@@ -8,7 +8,7 @@ const Register = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="overflow-x-hidden relative mb-1">
+    <div className="overflow-x-hidden overflow-y-hidden relative mb-1">
       <img
         className="h-[95vh] w-screen opacity-50  bg-transparent rounded-xl"
         src={require("../assets/login.jpg")}
